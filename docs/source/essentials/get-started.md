@@ -157,9 +157,9 @@ Here are the options you can pass to the `ApolloClient` exported from `apollo-bo
   <dt>`onError`: (errorObj: { graphQLErrors: GraphQLError[], networkError: Error, response?: ExecutionResult, operation: Operation }) => void</dt>
   <dd>We include a default error handler to log out your errors to the console. If you would like to handle your errors differently, specify this function.</dd>
   <dt>`clientState`: { resolvers?: Object, defaults?: Object, typeDefs?: string | Array<string> }</dt>
-  <dd>An object representing your configuration for `apollo-link-state`. This is useful if you would like to use the Apollo cache for local state management. Learn more in our [quick start](https://www.apollographql.com/docs/link/links/state.html#start).</dd>
+  <dd>An object representing your configuration for `apollo-link-state`. This is useful if you would like to use the Apollo cache for local state management. Learn more in our [quick start](https://www.apollographql.com/docs/link/links/state#start).</dd>
   <dt>`cacheRedirects`: Object</dt>
-  <dd>A map of functions to redirect a query to another entry in the cache before a request takes place. This is useful if you have a list of items and want to use the data from the list query on a detail page where you're querying an individual item. More on that [here](/features/performance.html#cache-redirects).</dd>
+  <dd>A map of functions to redirect a query to another entry in the cache before a request takes place. This is useful if you have a list of items and want to use the data from the list query on a detail page where you're querying an individual item. More on that [here](/advanced/caching#cache-redirects-with-cacheredirects).</dd>
   <dt>`credentials`: string</dt>
   <dd>Is set to `same-origin` by default. This option can be used to indicate whether the user agent should send cookies with requests. See [Request.credentials](https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials) for more details.</dd>
   <dt>`headers`: Object</dt>
